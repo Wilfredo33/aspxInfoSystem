@@ -1,0 +1,26 @@
+﻿* {
+    font-family: 'Comic Sans MS';
+}
+
+#MainLabel {
+    color: #0099CC;
+}
+
+table {
+    background-color:aquamarine;
+}
+
+.Datos {
+    background-color: #95cfe2;
+    border-color: #95cfe2;
+}
+
+.auto-style {
+    border-radius: 30px;
+    border-color: #33CCFF;
+}
+
+.ClickElement {
+    border-radius: 10px;
+    border-color: #33CCFF;
+}
