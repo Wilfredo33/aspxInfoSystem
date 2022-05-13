@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace POO
 {
@@ -16,7 +17,13 @@ namespace POO
         {
             try
             {
-                conn = new SqlConnection("server = DESKTOP-OQKBTET; database = POO; integrated security = true");
+                Encriptacion encripta = new Encriptacion();
+                string cadena = ConfigurationManager.AppSettings.Get("keyString"); //Se encuentra en webconfig/appSsettings
+                //string conexion = encripta.Decrypt(pass, cadena);
+
+                //connect = new SqlConnection(conexion);
+
+                //conn = new SqlConnection("server = DESKTOP-OQKBTET; database = POO; integrated security = true");
             }
 
             catch (global::System.Exception)

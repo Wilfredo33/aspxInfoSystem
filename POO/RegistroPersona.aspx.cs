@@ -66,7 +66,7 @@ namespace POO
         protected void TxBoxIdRol_TextChanged1(object sender, EventArgs e)
         {
             if (DropListRol.Text != "") {
-                autoincr += +1;
+                autoincr += 1;
                 int conver = Convert.ToInt32(TxBoxIdRol); //Asigna la variable a un textbox
             }
         }*/
